@@ -265,9 +265,7 @@ footer a {
   #pozadina #zaglavlje #slikainfo #hedlevo{
     display: none;
   }
-  #pozadina #zaglavlje #slikainfo{     
-     margin:50px auto;
-  }
+
   #pozadina header{
     width: 100%;
   }

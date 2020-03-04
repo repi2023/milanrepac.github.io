@@ -1,0 +1,171 @@
+
+.fullw{
+    width:100%
+}
+.txt-center{
+    text-align: center;
+}
+.bg-gr{
+    background-image: linear-gradient( white,#94e8ff,white);
+}
+.mg-auto{
+    margin:0px auto;
+}
+.d-flex{
+    display: flex;
+}
+.just-cont-se{
+    justify-content: space-evenly;
+}
+.just-cont-sb{
+    justify-content: space-between;
+}
+.f-col{
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+body{
+    @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+    font-family: Nunito;
+}
+.progclass{
+    background-image: linear-gradient(to right,rgb(168, 163, 163),#94e8ff );
+    font-weight: bold;
+    padding:5px;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+#pozadina{
+    background-image:url('../images/pozadina.jpg');
+    background-attachment: fixed;
+    height: 430px;
+    margin:0px auto;
+    header{
+        height:100%;
+        #slikainfo{
+            height:400px;
+            margin-top: 25px;
+            #hedlevo{
+                margin-left:50px;
+                height: 400px;
+            }
+        }
+        nav{
+            width:55%;
+            padding:15px 0px;
+            margin-right:50px;
+            background-color:rgb(168, 163, 163);
+            border-radius: 5% 5% 30% 30%;
+            position:fixed;
+            right:50px;
+            border:2px solid black;
+            ul{
+                list-style-type:none;
+                li{
+                    a{
+                        font-size: 1.5vw;
+                        color:#94e8ff;
+                    }
+                }
+            }
+        }
+        #info{
+            margin-left: 15px;
+            padding:20% 0;
+            span{
+                font-size: 1.8vw;
+            }
+        }
+    }
+}
+#headingABOUT{
+    font-size: 3vw;
+    padding:70px 0px 30px 0px;
+    background-image: linear-gradient(rgb(168, 163, 163),#94e8ff);
+    span{
+        display: block;
+        width:20%;
+        border-bottom:3px solid black;
+    }
+}
+#aboutpozadina{
+    background-image: linear-gradient(#94e8ff,rgb(168, 163, 163));
+    box-shadow: 0px 10px 6px -6px rgb(168, 163, 163);
+    padding-bottom: 50px;
+    #about{
+        width:90%;
+        p{  
+            font-size: 2.2vw;;
+        }
+    }
+}
+#headingSKILLS{
+    font-size: 3vw;
+    margin-top: 100px;
+}
+#skills{
+    margin-top:50px;
+    padding-bottom: 100px;
+    border-bottom: 3px solid rgb(168, 163, 163);
+    .progbar{
+        background-color: rgb(168, 163, 163);
+    #htmlprog{
+        width:80%;
+        }
+    }
+    #cssprog{
+        width:60%;
+    }
+    #Cprog{
+        width:50%;
+    }
+    #wordpressprog{
+        width:70%;
+    }
+}
+#headingCONTACT{
+    font-size: 3vw;
+    margin-top: 50px;
+}
+#contactarea{
+    margin-top:50px;
+    #contacttxt{
+        font-size: 2.5vw;
+        width:45%;
+    }
+    #linkovi{
+        width:45%;
+        flex-wrap: wrap;
+        .ikonica{
+            font-size: 7vw;
+        }
+        #ins{
+            color:#eb4034;
+        }
+        #fac{
+            color:#1e7bfc
+        }
+        #sas{
+            color:#fc731e;
+        }
+        #scc{
+            color:#213bff
+        }
+        
+    }
+}
+footer{
+    margin-top: 50px;
+    background-color: black;
+    color:rgb(168, 163, 163);
+    height:160px;
+    font-size: 1.5vw;
+    a{
+        color:#94e8ff;
+    }
+}
+

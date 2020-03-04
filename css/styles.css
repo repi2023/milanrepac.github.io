@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+.f-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .fullw {
   width: 100%;
 }
@@ -56,6 +61,11 @@ body {
   padding: 5px;
 }
 
+.spanclass {
+  display: block;
+  border-bottom: 3px solid black;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -79,11 +89,11 @@ body {
 
 #pozadina header #slikainfo #hedlevo {
   margin-left: 50px;
-  height: 400px;
+  height: 100%;
 }
 
 #pozadina header nav {
-  width: 55%;
+  width: 56%;
   padding: 15px 0px;
   margin-right: 50px;
   background-color: #a8a3a3;
@@ -102,9 +112,13 @@ body {
   color: #94e8ff;
 }
 
+#pozadina header nav ul li a:hover {
+  color: black;
+}
+
 #pozadina header #info {
   margin-left: 15px;
-  padding: 20% 0;
+  padding: 15% 0%;
 }
 
 #pozadina header #info span {
@@ -119,9 +133,7 @@ body {
 }
 
 #headingABOUT span {
-  display: block;
   width: 20%;
-  border-bottom: 3px solid black;
 }
 
 #aboutpozadina {
@@ -145,6 +157,10 @@ body {
   margin-top: 100px;
 }
 
+#headingSKILLS span {
+  width: 15%;
+}
+
 #skills {
   margin-top: 50px;
   padding-bottom: 100px;
@@ -155,7 +171,7 @@ body {
   background-color: #a8a3a3;
 }
 
-#skills .progbar #htmlprog {
+#skills #htmlprog {
   width: 80%;
 }
 
@@ -173,11 +189,18 @@ body {
 
 #headingCONTACT {
   font-size: 3vw;
-  margin-top: 50px;
+  padding-top: 50px;
+  background-color: cornsilk;
+}
+
+#headingCONTACT span {
+  width: 17%;
 }
 
 #contactarea {
-  margin-top: 50px;
+  padding-top: 50px;
+  background-color: cornsilk;
+  padding-bottom: 50px;
 }
 
 #contactarea #contacttxt {
@@ -187,12 +210,14 @@ body {
 
 #contactarea #linkovi {
   width: 45%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 #contactarea #linkovi .ikonica {
   font-size: 7vw;
+}
+
+#contactarea #linkovi .ikonica:hover {
+  color: #595959;
 }
 
 #contactarea #linkovi #ins {
@@ -212,7 +237,6 @@ body {
 }
 
 footer {
-  margin-top: 50px;
   background-color: black;
   color: #a8a3a3;
   height: 160px;
@@ -223,3 +247,132 @@ footer a {
   color: #94e8ff;
 }
 /*# sourceMappingURL=styles.css.map */
+@media(max-width:1100px){
+  footer{
+    height:120px;
+  }
+  .skill{
+    width:15%;
+  }
+  #pozadina header #info span {
+    font-size: 2.5vw;
+  }
+  #skills .skill .progbar #wordpressprog p{
+    font-size: 14px;
+  }
+}
+@media(max-width:950px){
+  #pozadina #zaglavlje #slikainfo #hedlevo{
+    display: none;
+  }
+  #pozadina #zaglavlje #slikainfo{     
+     margin:50px auto;
+  }
+  #pozadina header{
+    width: 100%;
+  }
+  #pozadina header nav{
+    margin:0% 22% 0% 22%;
+    right:0;
+  }
+  #pozadina header #info span {
+    font-size: 3.5vw;
+  }
+  #skills .skill .progbar #wordpressprog p{
+    font-size: 10px;
+  }
+}
+@media(max-width:950px){
+  
+.skill{
+  width:40%;
+}
+#skills .skill .progbar #wordpressprog p{
+  font-size: 18px;
+}
+#headingABOUT{
+  padding-top:30px;
+}
+#headingSKILLS{
+  margin-top:30px;
+}
+}
+@media(max-width:720px){
+  #zaglavlje #navigacija{
+    width:76%;
+    margin:0% 12% 0% 12%;
+  }
+  #zaglavlje #navigacija ul li a{
+    font-size: 2.5vw;
+  }
+footer .futertxt{
+  font-size: 2.5vw;
+}
+#aboutpozadina #about p{
+  font-size: 3vw;
+}
+}
+@media(max-width:550px){
+  #pozadina{
+    height:300px;
+  }
+  #headingABOUT{
+    font-size: 5vw;
+  }
+  #headingABOUT span{
+      width:30%;
+  }
+  #headingCONTACT{
+    font-size: 5vw;
+    padding-top: 20px;
+  }
+  #headingCONTACT span{
+      width:30%;
+  }
+  #headingSKILLS span{
+    font-size: 5vw;
+  }
+  #headingSKILLS span{
+      width:25%;
+  }
+  #aboutpozadina #about p{
+    font-size: 3.5vw;
+  }
+  #contactarea #contacttxt p{
+    font-size: 4vw;
+  }
+  #contactarea #linkovi{
+    flex-direction: column;
+      padding:0% 22% 0% 22%;
+  }
+  footer .futertxt{
+    font-size: 3vw;
+  }
+}
+@media(max-width:450px){
+  #pozadina #zaglavlje #slikainfo{
+    margin-top: 120px;
+  }
+  #zaglavlje #navigacija ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  #skills{
+    flex-direction: column;
+  }
+  .skill{
+    width: 80%;
+    margin:0px auto;
+  }
+  footer .futertxt{
+    font-size: 3.5vw;
+  }
+}
+@media(max-width:320px){
+  footer .futertxt{
+    font-size: 5vw;
+  }
+  #pozadina header #info span {
+    font-size: 4.5vw;
+  }
+}

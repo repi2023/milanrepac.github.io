@@ -1,4 +1,6 @@
-
+.f-wrap{
+    flex-wrap: wrap;
+}
 .fullw{
     width:100%
 }
@@ -35,6 +37,10 @@ body{
     font-weight: bold;
     padding:5px;
 }
+.spanclass{
+        display: block;
+        border-bottom:3px solid black;
+}
 *{
     margin:0px;
     padding:0px;
@@ -51,7 +57,7 @@ body{
             margin-top: 25px;
             #hedlevo{
                 margin-left:50px;
-                height: 400px;
+                height: 100%;
             }
         }
         nav{
@@ -69,13 +75,16 @@ body{
                     a{
                         font-size: 1.5vw;
                         color:#94e8ff;
+                       &:hover{
+                           color:black;
+                       }
                     }
                 }
             }
         }
         #info{
             margin-left: 15px;
-            padding:20% 0;
+            padding:15% 0%;
             span{
                 font-size: 1.8vw;
             }
@@ -87,9 +96,7 @@ body{
     padding:70px 0px 30px 0px;
     background-image: linear-gradient(rgb(168, 163, 163),#94e8ff);
     span{
-        display: block;
         width:20%;
-        border-bottom:3px solid black;
     }
 }
 #aboutpozadina{
@@ -106,6 +113,10 @@ body{
 #headingSKILLS{
     font-size: 3vw;
     margin-top: 100px;
+    span{
+        width:15%;
+    }
+
 }
 #skills{
     margin-top:50px;
@@ -113,10 +124,10 @@ body{
     border-bottom: 3px solid rgb(168, 163, 163);
     .progbar{
         background-color: rgb(168, 163, 163);
+    }
     #htmlprog{
         width:80%;
         }
-    }
     #cssprog{
         width:60%;
     }
@@ -129,19 +140,28 @@ body{
 }
 #headingCONTACT{
     font-size: 3vw;
-    margin-top: 50px;
+    padding-top: 50px;
+    background-color: cornsilk;
+    span{
+        width:17%;
+    }
+
 }
 #contactarea{
-    margin-top:50px;
+    padding-top:50px;
+    background-color: cornsilk;
+    padding-bottom: 50px;
     #contacttxt{
         font-size: 2.5vw;
         width:45%;
     }
     #linkovi{
         width:45%;
-        flex-wrap: wrap;
         .ikonica{
             font-size: 7vw;
+            &:hover{
+                color:#595959;
+            }
         }
         #ins{
             color:#eb4034;
@@ -159,7 +179,6 @@ body{
     }
 }
 footer{
-    margin-top: 50px;
     background-color: black;
     color:rgb(168, 163, 163);
     height:160px;
@@ -167,5 +186,7 @@ footer{
     a{
         color:#94e8ff;
     }
-}
+} 
+
+
 

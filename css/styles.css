@@ -288,6 +288,9 @@ footer a {
 #skills .skill .progbar #wordpressprog p{
   font-size: 18px;
 }
+#pozadina header #slikainfo{
+  margin:50px auto;
+}
 #headingABOUT{
   padding-top:30px;
 }

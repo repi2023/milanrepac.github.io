@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="Milan, Repac, portfolio, html, scss">
-    <meta name="description" content="Portfolio project.">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="This is a portfolio website. If you are looking for a web developer to help you with your buisness, then click the link and you will find any information you need.">
     <meta name="author" content="Repac Milan">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
@@ -14,17 +15,8 @@
 </head>
 <body>  
     <div id="pozadina">
-        <header id="zaglavlje" class="d-flex just-cont-sb fullw">
-            <div id="slikainfo"class="d-flex just-cont-sb">
-                <div id="hedlevo" class="mt25"><img src="images/Milan.jpg.JPG " class="fullw" alt="SlikaMilan" >
-                </div>
-                <div id="info">
-                    <span>NAME:Milan Repac</span><br>
-                    <span>AGE:19yo</span><br>
-                    <span>EMAIL:mrepac2023@gmail.com</span><br>
-                    <span>PHONE:+38161-252-29-21</span><br>
-                </div>
-            </div>
+        <header id="zaglavlje" class="fullw d-flex just-cont-se">
+            <div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
             <nav id="navigacija">
                 <ul class="d-flex just-cont-se ">
                     <li><a href="#zaglavlje">HOME</a></li>
@@ -34,22 +26,28 @@
                 </ul>
             </nav>
         </header>
+        <div id="mainText" class="mg-auto txt-center">
+            <h1>Milan Repac</br> WEB DEVELOPER</h1>
+        </div>
     </div>
-    <div id="headingABOUT" class="fullw txt-center"><span class="mg-auto spanclass">ABOUT ME</span></div>
-    <div id="aboutpozadina">
-        <div id="about" class="txt-center mg-auto">
+    <div id="headingABOUT" class="fullw txt-center bold "><span class="mg-auto spanclass">ABOUT ME</span></div>
+    <div id="aboutpozadina" class="d-flex ">
+        <div id="aboutslika">
+            <img src="images/Milan.jpg.JPG">
+        </div>
+        <div id="about" class="txt-center ">
             <p>My name is Milan, I am a young and ambitious web developer from Serbia. My whole life I wanted to dabble with computers, which is why I am currently studying at "Visoka ICT" school located in Belgrade. When the time comes, I hope to have learned a lot from this expirience, and to have started working on many new and exciting projects, thus perfecting my craft. I have a diploma for successfully finishing the FCE exam(B2), and am currently studying for the CAE exam(C1). Furthermore, I am employed at a firm called "365 ADS", where I work as a field operative. Because of this I have expirience in taking professional photos, and can operate a program called "Social Booth".  </p>
         </div>
     </div>
-    <div id="headingSKILLS" class="fullw txt-center"><span class="mg-auto spanclass">SKILLS</span></div>
+    <div id="headingSKILLS" class="fullw txt-center bold"><span class="mg-auto spanclass">SKILLS</span></div>
     <div id="skills" class="fullw d-flex just-cont-se f-wrap">
         <div class="skill d-flex f-col">
             <div class="skillimg">
-                <img src="images/html.jpg" class="fullw" alt="html5slika">
+                <img src="images/html.jpg" class="fullw"  alt="html5slika">
             </div>
            <div class="progbar fullw">
                 <div id="htmlprog" class="d-flex just-cont-sb progclass">
-                    <p>HTML5</p>
+                    <p>HTML 5</p>
                     <span>80%</span>
                 </div>
            </div>
@@ -60,7 +58,7 @@
             </div>
            <div class="progbar fullw">
                 <div id="cssprog" class="d-flex just-cont-sb progclass">
-                    <p>CSS3</p>
+                    <p>CSS 3</p>
                     <span>60%</span>
                 </div>
            </div>
@@ -88,21 +86,24 @@
            </div>
         </div>
     </div>
-    <div id="headingCONTACT" class="fullw txt-center"><span class="mg-auto spanclass">CONTACT</span></div>
+    <div id="headingCONTACT" class="fullw txt-center bold"><span class="mg-auto spanclass">CONTACT</span></div>
     <div id="contactarea" class="d-flex just-cont-se fullw">
         <div id="contacttxt" class="txt-center">
-            <p>Feel free to contact me via Instagram, Facebook, Viber or by sending an email to my adress: <b>mrepac2023@gmail.com</b>. I am available 24/7, and will always answer back within minutes.</p>
+            <p>Feel free to contact me via <a href="https://www.instagram.com/repac_m/?hl=en">Instagram</a>, <a href="https://www.facebook.com/milan.repac.9">Facebook</a>, Viber or by sending an email to my adress: <b>mrepac2023@gmail.com</b>. I am available 24/7, and will always answer back within minutes.</p>
         </div>
-        <div id="linkovi" class="d-flex just-cont-se f-wrap">
-            <a id="ins" href="https://www.instagram.com/repac_m/"><i class="fab fa-instagram ikonica"></i></a>
-            <a id="fac"href="https://www.facebook.com/milan.repac.9"><i class="fab fa-facebook ikonica"></i></a>
-            <a id="sas"href="css/styles.scss"><i class="fab fa-sass ikonica"></i></a>
-            <a id="scc"href="css/styles.css"><i class="fab fa-css3-alt ikonica"></i></a>
+        <div id="linkovi" class="d-flex f-col">
+            <div id="headinginfo" class="fullw txt-center "><span>PERSONAL INFO:</span></div>
+            <span>NAME: Milan Repac</span>
+            <span>AGE: 19yo</span>
+            <span>EMAIL: mrepac2023@gmail.com</span>
+            <span>PHONE: +38161-252-29-21</span>
         </div>  
     </div>
     <footer class="fullw d-flex just-cont-se">
         <div class="futertxt">
-            <span>&copy;Milan Repac, 2020</span>
+            <span>&copy;Milan Repac, 2020</br>
+                        144/19
+            </span>
         </div>    
         <div class="futertxt">
             <span>
